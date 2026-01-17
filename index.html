@@ -3,66 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackinet</title>
+    <title>Project Proposal | Hackinet</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            min-height: 100vh;
-            display: flex;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .notion-embed {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+        .fallback {
+            display: none;
+            height: 100vh;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #fff;
-        }
-        .container {
             text-align: center;
             padding: 2rem;
         }
-        h1 {
-            font-size: 3rem;
+        .fallback h1 {
+            font-size: 2rem;
             margin-bottom: 1rem;
-            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
-        p {
-            font-size: 1.2rem;
+        .fallback p {
             color: #a0a0a0;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
-        .links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        a {
+        .fallback a {
             color: #00d4ff;
             text-decoration: none;
             padding: 0.75rem 1.5rem;
             border: 1px solid #00d4ff;
             border-radius: 8px;
-            transition: all 0.3s ease;
         }
-        a:hover {
+        .fallback a:hover {
             background: #00d4ff;
             color: #1a1a2e;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hackinet</h1>
-        <p>Welcome to my personal space on the web.</p>
-        <div class="links">
-            <a href="https://github.com/Hackinet">GitHub</a>
-        </div>
+    <iframe
+        class="notion-embed"
+        src="https://www.notion.so/Project-proposal-2eb6bafcfd6a80f39107fbe1ac438ce8"
+        allowfullscreen
+        onload="this.style.display='block'"
+        onerror="document.querySelector('.fallback').style.display='flex'; this.style.display='none';">
+    </iframe>
+    <div class="fallback">
+        <h1>Project Proposal</h1>
+        <p>The embedded content couldn't load. View it directly on Notion:</p>
+        <a href="https://www.notion.so/Project-proposal-2eb6bafcfd6a80f39107fbe1ac438ce8" target="_blank">Open in Notion</a>
     </div>
+    <script>
+        // Check if iframe loaded successfully after a delay
+        setTimeout(() => {
+            const iframe = document.querySelector('.notion-embed');
+            try {
+                // This will throw if blocked by X-Frame-Options
+                if (!iframe.contentWindow.document) {
+                    throw new Error('blocked');
+                }
+            } catch (e) {
+                // Can't access - might be blocked, but iframe might still display
+            }
+        }, 3000);
+    </script>
 </body>
 </html>
