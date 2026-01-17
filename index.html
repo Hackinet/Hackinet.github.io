@@ -3,84 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Proposal | Hackinet</title>
+    <title>Zero To One | Piyush Jha</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafafa;
         }
-        .notion-embed {
-            width: 100%;
-            height: 100vh;
-            border: none;
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
-        .fallback {
-            display: none;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
+        header {
             text-align: center;
-            padding: 2rem;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e0;
         }
-        .fallback h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .fallback p {
-            color: #a0a0a0;
-            margin-bottom: 1.5rem;
-        }
-        .fallback a {
-            color: #00d4ff;
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border: 1px solid #00d4ff;
+        .header-image {
+            max-width: 100%;
             border-radius: 8px;
+            margin-bottom: 2rem;
         }
-        .fallback a:hover {
-            background: #00d4ff;
-            color: #1a1a2e;
+        h1.title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .edition {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .author-info {
+            font-size: 0.95rem;
+            color: #888;
+            line-height: 1.8;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 3rem 0 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .placeholder {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 2rem;
+            text-align: center;
+            color: #888;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+        ul {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .table-placeholder {
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        blockquote {
+            border-left: 4px solid #333;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #555;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <iframe
-        class="notion-embed"
-        src="https://www.notion.so/Project-proposal-2eb6bafcfd6a80f39107fbe1ac438ce8"
-        allowfullscreen
-        onload="this.style.display='block'"
-        onerror="document.querySelector('.fallback').style.display='flex'; this.style.display='none';">
-    </iframe>
-    <div class="fallback">
-        <h1>Project Proposal</h1>
-        <p>The embedded content couldn't load. View it directly on Notion:</p>
-        <a href="https://www.notion.so/Project-proposal-2eb6bafcfd6a80f39107fbe1ac438ce8" target="_blank">Open in Notion</a>
+    <div class="container">
+        <header>
+            <h1 class="title">Zero To One</h1>
+            <p class="edition">Edition 1</p>
+            <div class="author-info">
+                <strong>Piyush Jha</strong><br>
+                8/D5 Jasmine Street<br>
+                Vatika City, Sector - 49<br>
+                Gurgaon, HR 122018
+            </div>
+        </header>
+
+        <h1>Chapter 1 - Circuit</h1>
+        <p>Imagine a water pipe with water flowing through it. If you step on the pipe, the flow stops.</p>
+        <div class="placeholder">[insert picture]</div>
+        <p>An electrical circuit works the same way: replace the pipe with a wire and the water with electrons. Your foot acts like a switch, turning the flow on and off.</p>
+        <p>Electricity travels at nearly the speed of light, about 300,000 kilometers per second, which means it could travel around the Earth about 7.5 times in just one second.</p>
+        <p>So you can think of it as having two states: <strong>On</strong> and <strong>Off</strong>.</p>
+        <p><strong>On</strong> means the circuit is closed and electricity is flowing, like water flowing through a pipe.</p>
+        <p><strong>Off</strong> means the circuit is open and nothing is flowing, like a pipe with no water moving through it.</p>
+
+        <h1>Chapter 2 - Binary Number System</h1>
+        <p>Stop thinking of numbers as values for a moment. Think of them as symbols.</p>
+        <p>Imagine you discover an ancient Egyptian cave filled with strange symbols. Those symbols represent a number system, even if they don't look like the numbers we use today.</p>
+        <div class="placeholder">[insert picture]</div>
+        <p>In a binary number system, there are only two symbols: <strong>0</strong> and <strong>1</strong>.</p>
+        <p>In everyday life, we use the decimal system, which has ten symbols in total: 0 through 9.</p>
+        <p>You could also have a base-3 number system, which uses the symbols 0, 1, and 2.</p>
+        <p>A number system is defined by its base. When we say "base 3," we mean a system whose valid symbols range from 0 to 2.</p>
+        <p>The base-2 number system is called <strong>binary</strong>.</p>
+        <p>One important pattern is that the highest symbol in any number system is always one less than the base:</p>
+        <ul>
+            <li>Base 2: symbols 0–1, last symbol is 1</li>
+            <li>Base 5: symbols 0–4, last symbol is 4</li>
+            <li>Base 10: symbols 0–9, last symbol is 9</li>
+        </ul>
+        <p>The base tells you how many unique symbols the system uses, not what those symbols look like.</p>
+
+        <h1>Chapter 3 - Bits and Bytes</h1>
+        <p>A bit is simply a single symbol position in the binary number system.</p>
+        <p>For example, in base 10, the number 12345 has 5 symbols.</p>
+        <p>In binary, if you have a number like 0100, it has 4 symbols.</p>
+        <p>Each one of those symbols is a <strong>bit</strong>.</p>
+        <p>If you have a group of 8 symbols (bits), it is called <strong>1 byte</strong>.</p>
+        <p>So 2 bytes = 16 bits.</p>
+        <p>3 bytes = 24 bits.</p>
+
+        <h1>Chapter 4 - Binary Addition</h1>
+        <p>In the decimal number system, when you add 1 and 9, you get 10, which uses two symbols.</p>
+        <p>This happens because there is no symbol higher than 9. When we reach the maximum symbol, it resets to 0, and we carry over a 1 to the next symbol place.</p>
+        <p>In a binary number system:</p>
+        <p>When you add 0 and 0, you get 0.</p>
+        <p>0 and 1 gives you 1.</p>
+        <p>1 and 1, will give you 10.</p>
+        <p>Adding "10" and "1" will give you "11".</p>
+        <p>When happens when you do "11" + "1", you get "100".</p>
+        <div class="note">Change to tables with arrows to show carry over.</div>
+
+        <h1>Chapter 5 - Binary To Decimal, and back</h1>
+        <p>Do table side by side, let us keep adding 1, in both the decimal and binary number systems.</p>
+        <div class="table-placeholder">0   0     0
+1   1     1
+2   10    2
+3   11    3
+4   100   4
+5   101   5
+6   110   6
+7   111   7
+8   1000  8</div>
+        <p>Notice how, 8, 4, 2, and 1 have really clean looking pattern with all those zeros.</p>
+        <p>Following that pattern, we know:</p>
+        <div class="table-placeholder">10000       = 16
+100000      = 32
+1000000     = 64
+10000000    = 128
+100000000   = 256
+1000000000  = 512</div>
+        <p>To convert a decimal number to binary, try to break it down to that pattern.</p>
+        <p>So 17 can be 16+1</p>
+        <p>15 can be 8+4+2+1</p>
+        <p>So you can represent decimal number as power of 2. And then convert that to binary.</p>
+        <p>So 15 to binary = 1000 + 100 + 10 + 1 = 1111</p>
+        <p>So 673 = 512 + 128 + 32 + 1 = 1010100001</p>
+        <p>You can also convert a binary number to decimal with this process:</p>
+        <p>101011 = 100000 + 1000 + 10 + 1 = 32 + 8 + 2 + 1 = 43</p>
+        <p>Sometimes you could have a really big binary number 100000000000, how do you even calculate that. You probably wouldn't want to write the whole table for it. It's too much work and we are lazy. There is a nifty pattern for it:</p>
+        <div class="table-placeholder">2^0  = 1
+2^1  = 2
+2^2  = 4
+2^3  = 8
+2^(how many zeros in binary suffix) = decimal number</div>
+        <p>100000000000 = 2^11 = 2048</p>
+
+        <h1>Chapter 5.1 - Bit Size and Overflows</h1>
+        <p>Okay. We made it this far. We aren't that stupid. Guess we can study more.</p>
+        <p>If I tell you, you have a piece of sheet and it was 3 centimetres thick and you needed to write 1 symbol every centimetre. That would mean you can only write 3 bits on that paper because that is all the space you have.</p>
+        <p>The paper is long though in height, just limited to 3 cm in width.</p>
+        <p>So say, we start with 000 and you add 1 to it and keep adding 1 to it.</p>
+        <p><code>001, 010, 011, 100, 101, 110, 111, 000</code></p>
+        <p>That is an <strong>overflow</strong>. Your overfilled your container and it "overflowed".</p>
+        <p>The question is, what is the maximum decimal number you can store given 3 bits?</p>
+        <p>What about 5 bits?</p>
+        <p>What about 8 bits?</p>
+        <p>How many bits are required to store the decimal number 73829?</p>
+
+        <h1>Chapter 5.2 - Encodings</h1>
+        <p>Back in ancient times, even before I was born. People came up with solutions to represent English in binary numbers because that is all a computer understands and they used 7 bits (8 bits were available but 7 was enough, the old school is used smiles and not emoji).</p>
+        <p>That means they could represent 0-127?</p>
+        <div class="placeholder">[insert ASCII table here]</div>
+        <p>Then came extended ASCII which was 8 bits, where we had some more characters mapping. Like Swedish symbols å or math symbols like pi (185).</p>
+        <div class="note">
+            <p>Topics to cover:</p>
+            <ul>
+                <li>Problems with ASCII</li>
+                <li>UTF, UTF-16</li>
+                <li>Crashing someone's Whatsapp on iOS by sending a character out of range</li>
+                <li>Big-Endian, etc.</li>
+            </ul>
+        </div>
+
+        <h1>Chapter 5 - 1's Compliment</h1>
+        <p>All is good but you might say. Okay, we can represent decimal numbers in binary. We have a encoding table to map, English letters and other languages to binary. But what about negative numbers. Can we store negative numbers? Can we do subtraction?</p>
+        <p>So yeah, you can do subtraction as long as, you are subtracting B from A where A is bigger than or equal to B.</p>
+        <p>So 5-5 = Okay. 5-6 = Bad.</p>
+        <p>Let's try, 101-101 = 0, great.</p>
+        <p>101-110 = Show with arrows and carry over</p>
+        <p>Unless you find a way to represent negative numbers in binary.</p>
+        <p>So what we do is, we reserve the MSB as the sign bit.</p>
+        <div class="placeholder">[Insert a picture of MSB]</div>
+        <p>So 0101 = Positive 5. You essentially only have 3 bits to show 0 and positive numbers.</p>
+        <p>0-000 to 0-111.</p>
+        <p>You flip them, you get 1-010, when the sign is 1, you know it's a negative number. And to get the magnitude, you need to flip them all back.</p>
+        <p>There is a problem with this approach though, so 0000 is 0 but 1111 is also 0, so essentially you have a negative 0.</p>
+        <div class="note">Also insert problems with arithmetic.</div>
+
+        <h1>Chapter 6 - 2's Compliment</h1>
+        <p>This solves the problem with 1's compliment and math is more natural.</p>
+
+        <h1>Chapter 7 - Gates</h1>
+
+        <h2>OR</h2>
+        <blockquote>In english, this essentially means either.</blockquote>
+        <p>So I can say,</p>
+        <p><strong>Statement:</strong> you are a human OR you are a cat.</p>
+        <p>Even though parts of it might be false individually, I can conclude that the statement as a whole is true.</p>
+        <p>So the truth table for this is: A OR B</p>
+
+        <h2>AND</h2>
+        <p>All the parts of the statement should be true.</p>
+        <p><strong>Statement:</strong> The reader is a human being AND needs water to survive.</p>
+        <p>The statement is truthy.</p>
+
+        <h2>NOT</h2>
+        <p>Statement: [Truth table]</p>
+
+        <h2>NOR</h2>
+        <p>Truth table</p>
+
+        <h2>NAND</h2>
+        <p>Truth table</p>
+
+        <h2>XOR</h2>
+        <p>Truth table</p>
+
+        <h1>Chapter 8 - Binary Expressions and Circuits</h1>
+        <p>Guess everything loops back to the beginning (circuit joke, pun intended)</p>
+
+        <h1>Chapter 9 - Adder, Subtractor</h1>
+        <p>Half bit adder</p>
+        <p>Full bit adder</p>
+        <p>Can you build a subtractor?</p>
+
+        <h1>Chapter 9 - Floating Points and Precision Problem</h1>
+        <p>Mantissa</p>
+
+        <h1>Chapter 10 - Division, Multiplication</h1>
+
+        <footer>
+            <p>&copy; Piyush Jha | Zero To One</p>
+        </footer>
     </div>
-    <script>
-        // Check if iframe loaded successfully after a delay
-        setTimeout(() => {
-            const iframe = document.querySelector('.notion-embed');
-            try {
-                // This will throw if blocked by X-Frame-Options
-                if (!iframe.contentWindow.document) {
-                    throw new Error('blocked');
-                }
-            } catch (e) {
-                // Can't access - might be blocked, but iframe might still display
-            }
-        }, 3000);
-    </script>
 </body>
 </html>
